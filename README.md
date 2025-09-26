@@ -13,7 +13,8 @@ Parcour1.columns = ["Zeit", "X", "Y", "Z", "Summe"]
 
 plt.plot(Parcour1["Zeit"], Parcour1["Summe"], label="Parcour 1", color="blue")
 
-# Anpassung Bildgröße / Gitter / Beschriftungen
+## Anpassung Bildgröße / Gitter / Beschriftungen
+***/
 plt.figure(figsize=(12, 6))
 plt.grid()
 plt.plot(Parcour1["Zeit"], Parcour1["Summe"], label="Parcour 1", color="blue")
@@ -22,7 +23,7 @@ plt.xlabel("Zeit (s)")
 plt.ylabel("Summe Beschleunigung (m/s²)")
 plt.title("Vergleich der Parcours")
 plt.legend()
-
+***
 # Maximale Werte 
 ## Maximalwert Parcour 1
 max_Parcour1 = Parcour1["Summe"].max()
